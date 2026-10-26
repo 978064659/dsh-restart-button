@@ -1,0 +1,6 @@
+# dsh bundle layer: mount the restart button.
+# The Host half (dsh/index.js) answers two authenticated routes on the harness
+# web server; the Client half (dsh/client.js) draws the title-bar button.
+- insert:
+    - id: restart-button
+      name: 'dsh-restart-button'

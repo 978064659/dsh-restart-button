@@ -1,0 +1,51 @@
+{
+  "name": "dsh-restart-button",
+  "version": "0.2.1",
+  "description": "在桌面端窗口标题栏右上角（最小化按钮左侧）添加重启按钮，一键重启 DeepSeek Harness，装完插件后不必手动退出再打开。",
+  "type": "module",
+  "main": "dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./dsh/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dsh",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets",
+    "README.md"
+  ],
+  "license": "MIT",
+  "author": "lj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/978064659/dsh-restart-button.git"
+  },
+  "homepage": "https://github.com/978064659/dsh-restart-button#readme",
+  "bugs": {
+    "url": "https://github.com/978064659/dsh-restart-button/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "restart",
+    "titlebar",
+    "plugin"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

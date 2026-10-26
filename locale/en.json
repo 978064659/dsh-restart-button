@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Restart Button",
+    "description": "Adds a restart button in the window title bar, left of the minimize control, so DeepSeek Harness can be relaunched without quitting it by hand."
+  }
+}
